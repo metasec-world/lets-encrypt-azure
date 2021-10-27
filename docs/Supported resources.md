@@ -1,6 +1,6 @@
 # Supported resources
 
-The function runs off config files in the storage container; a short example (see [sample.json](./LetsEncrypt.Func/sample.json) for a more detailed config example):
+The function runs off config files in the storage container; a short example (see [sample.json](./../LetsEncrypt.Func/sample.json) for a more detailed config example):
 
 ``` json
 {
@@ -34,7 +34,7 @@ The function runs off config files in the storage container; a short example (se
 
 This config would renew one certificate (with two hostnames) for the cdn named "example". The certificate would be stored in keyvault "example" and the Let's Encrypt ACME challenge would be answered via the storage account "example" (using the $web container).
 
-This is a rather compact example of the config, for a more complete example with comments and explanation of the fallback system check out the [sample config](./LetsEncrypt.Func/sample.json).
+This is a rather compact example of the config, for a more complete example with comments and explanation of the fallback system check out the [sample config](./../LetsEncrypt.Func/sample.json).
 
 As you can see in the certificates section you can renew any number of certificates with any number of hostnames. To do so, 3 sections must be provided: `challengeResponder`, `certificateStore` and `targetResource`.
 
